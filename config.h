@@ -1615,6 +1615,10 @@
 #define ZENER_UNSWITCHED
 #undef SW_IR_RECEIVER
 #define HW_IR_RECEIVER
+//Pinout for fixed IR detector/decoder:
+#undef IR_DATA
+#define IR_DATA          PD3       /* Pin 1 data signal */
+#endif
 
 //Optionally high voltage for Zener testing:
 #define HW_PROBE_ZENER
@@ -1649,10 +1653,6 @@
 #define LCD_OFFSET_X     2               /* enable x offset of 2 or 4 dots */
 #define LCD_OFFSET_Y     1               /* enable y offset of 1 or 2 dots */
 
-//Pinout for fixed IR detector/decoder:
-#undef IR_DATA
-#define IR_DATA          PD3       /* data signal */
-#endif
 
 /* ************************************************************************
  *   additional stuff supporting this configuration
